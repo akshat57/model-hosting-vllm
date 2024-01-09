@@ -2,8 +2,8 @@ import requests
 
 url = "http://localhost:8000/generate"
 data = {
-        "prompt": "San Francisco is a",
-        "temperature": 0,
+        "prompt": "The law of gravity was discovered by",
+        "temperature": 0.8,
         "top_p":1,
         "max_tokens":200
         }
