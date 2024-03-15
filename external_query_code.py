@@ -1,12 +1,11 @@
 import requests
 
 data = {
-    'system_prompt': 'Example prompt',
-    'user_prompt': 'Example text',
+    'model_prompt': 'Wo liegt München in Deutschland?',
     'temperature': 0.2,
-    'top_p': 0.95,
-    'max_tokens': 200
+    'max_tokens': 200,
+    'logprobs':3
     }
 
-response = requests.post('http://lexi.eecs.berkeley.edu:8002/query_model', json=data)
+response = requests.post('http://crtx.eecs.berkeley.edu:8002/query_model', json=data)
 print(response.json())
